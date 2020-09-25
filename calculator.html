@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/calculator.css">
+    
+</head> 
+<body> 
+  <div class="main">
+      <div class="calc">
+        <p>CASIO</p>
+          <div class="output">
+              <input type="text" id="screen">
+          </div>
+          <div class="buttons">
+            <button id="clear" class="btn" style=" background-color: rgb(214, 72, 72); color: white;" onclick="clr()">C</button>
+            <button class="btn" style="margin-left: 20px; " onclick="sqroot('&#8730;')"><span style="font-size: 15px; font-weight:bold;">&#8730;</span></button>
+            <button class="btn" style="margin-left: 20px; " onclick="square('x&#178;')">x&#178;</button>
+            <button class="btn" style="margin-left: 20px; " onclick="reciprocal('1/x')"><span style="font-size: 16px;">1/x</span></button>
+              <div class="row">
+              <button class="btn" onclick="clicked(7)" >7</button>
+              <button  class="btn" onclick="clicked(8)">8</button>
+              <button class="btn" onclick="clicked(9)">9</button>
+              <button  class="btn" class="top" onclick="div('&#247;')" onclick="play()">&#247;</button>
+            </div>
+              <div class="row">
+                <button class="btn" onclick="clicked(4)">4</button>
+                <button  class="btn" onclick="clicked(5)">5</button>
+                <button class="btn" onclick="clicked(6)">6</button>
+                <button  class="btn" class="top" onclick="mul('&#215;')">&#215;</button>
+              </div>
+              <div class="row">
+                <button class="btn" onclick="clicked(1)">1</button>
+              <button  class="btn" onclick="clicked(2)">2</button>
+              <button class="btn" onclick="clicked(3)">3</button>
+              <button  class="btn" class="top" onclick="sub('-')">-</button>
+
+            </div>
+            <div class="row">
+              <button class="btn" onclick="clicked(0)">0</button>
+              <button  class="btn" onclick="dot('.')">.</button>
+              <button class="btn" onclick="equal()">=</button>
+              <div class="add">
+              <button id="plus" class="btn" class="top" onclick="addition('+')">+</button>
+               </div>
+               <div class="del">
+                <button id="delete" class="btn" onclick="del()"><span style="font-size: 15px;">DEL</span></button>
+                 </div>
+            </div>
+
+
+
+
+
+
+          </div>
+      </div>
+  </div> 
+  <script src="script/script.js"></script> 
+</body>
+</html>
